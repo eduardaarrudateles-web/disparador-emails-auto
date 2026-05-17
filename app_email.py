@@ -57,7 +57,7 @@ if arquivo_subido is not None:
                 cpf_cliente = str(linha[col_cpf]).strip()
                 
                 # Valida se a linha possui um e-mail preenchido
-                if pd.notna(linha[col_email]) and email_email_cliente != 'nan':
+                if pd.notna(linha[col_email]) and email_cliente != 'nan':
                     assunto = f"Aviso sobre o CPF {cpf_cliente}"
                     
                     msg = EmailMessage()
